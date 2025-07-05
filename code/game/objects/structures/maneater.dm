@@ -76,7 +76,7 @@
 				spawn(50)
 					if(C && (C.buckled == src))
 						playsound(src, 'sound/misc/eat.ogg', rand(30,60), TRUE)
-						C.adjustBruteLoss(35)
+						C.adjustBruteLoss(30)
 						seednutrition += 20
 						src.visible_message(span_danger("[src] bites down hard on [C]!"))
 						if(C.mind)
@@ -84,7 +84,7 @@
 						return
 			else
 				src.visible_message(span_danger("[src] starts to rip apart [L]!"))
-				L.adjustBruteLoss(20)
+				L.adjustBruteLoss(45)
 				seednutrition += 20
 				if(L.mind)
 					maneater_spit_out(L)
